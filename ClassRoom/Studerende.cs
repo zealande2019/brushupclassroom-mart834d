@@ -16,6 +16,7 @@ namespace ClassRoom
             Bday = bday;
         }
 
+        // opgave 5
         public string årstid()
         {
             if (Birth == 12 || Birth == 1 || Birth == 2)

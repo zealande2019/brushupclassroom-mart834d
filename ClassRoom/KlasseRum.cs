@@ -15,9 +15,7 @@ namespace ClassRoom
         {
                 
         }
-        // vi bruger bare denne her til chat i stedet
-        //rgr
-        //du flyver bare
+       
 
     }
 }

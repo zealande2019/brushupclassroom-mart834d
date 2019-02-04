@@ -35,6 +35,8 @@ namespace ClassRoom
 
             Console.WriteLine(student1.årstid());
             
+
+            // kalder på metoden fra opgave 6.
             Count("Sommer", klasseRum);
             Count("Vinter", klasseRum);
             Count("Efterår", klasseRum);
@@ -44,6 +46,8 @@ namespace ClassRoom
             Console.ReadLine();
         }
 
+
+        // Laver metoden opgave 6.
         static void Count(string type, KlasseRum KlasseRum)
         {
             int count = 0;
