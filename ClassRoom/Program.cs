@@ -11,20 +11,22 @@ namespace ClassRoom
     {
         static void Main(string[] args)
         {
-           KlasseRum klasseRum = new KlasseRum();
-            klasseRum.KlasseNavn = "3B";
-            klasseRum.SemesterStart = new DateTime(2018,09,04);
+           KlasseRum klasseRum = new KlasseRum(); // skaber nyt Klasse Objekt
+            klasseRum.KlasseNavn = "3B"; // navngiver klassen
+            klasseRum.SemesterStart = new DateTime(2018,09,04); //sætter en start dato
             Studerende student1 = new Studerende("Martin", 06, 13);
             Studerende student2 = new Studerende("Alex", 08, 30);
             Studerende student3 = new Studerende("Dennis", 07, 26);
             Studerende student4 = new Studerende("Luca", 09, 28);
             Studerende student5 = new Studerende("Louise", 05, 04);
+            //skaber nogle studerende objekter
 
             klasseRum.Klasseliste.Add(student1);
             klasseRum.Klasseliste.Add(student2);
             klasseRum.Klasseliste.Add(student3);
             klasseRum.Klasseliste.Add(student4);
             klasseRum.Klasseliste.Add(student5);
+            //tilføjer til klasse listen
 
             foreach (var item in klasseRum.Klasseliste)
             {
@@ -32,6 +34,7 @@ namespace ClassRoom
 
                 Console.WriteLine($"{item.Navn} er født {item.Bday}/{item.Birth}");
             }
+            //udskriver diverse info
 
             Console.WriteLine(student1.årstid());
             

@@ -7,13 +7,20 @@ namespace ClassRoom
     public class Studerende
     {
         public string Navn { get; set; }
-        public int Birth { get; set; }
+
+        public int Birth { get; }
         public int Bday { get; set; }
         public Studerende(string navn, int birth, int bday)
         {
             Navn = navn;
             Birth = birth;
             Bday = bday;
+
+            // opgave 7 mit bud på. Ikke komplet færdig...
+            if (Birth > 13  || Birth < 0)
+            {
+                throw ArgumentException;
+            }
         }
 
         // opgave 5
