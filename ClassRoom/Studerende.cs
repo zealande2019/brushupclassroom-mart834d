@@ -8,18 +8,18 @@ namespace ClassRoom
     {
         public string Navn { get; set; }
 
-        public int Birth { get; }
-        public int Bday { get; set; }
+        public int Birth { get; } // fødselsmåned
+        public int Bday { get; set; } // Fødselsdag
         public Studerende(string navn, int birth, int bday)
         {
             Navn = navn;
             Birth = birth;
             Bday = bday;
 
-            // opgave 7 mit bud på. Ikke komplet færdig...
-            if (Birth > 13  || Birth < 0)
+            // opgave 7 mit bud på hvordan jeg ville lave den.
+            if (Birth > 12 || Birth < 1)
             {
-                throw ArgumentException;
+                throw new ArgumentException();
             }
         }
 
